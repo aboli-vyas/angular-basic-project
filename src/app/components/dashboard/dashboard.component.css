@@ -1,0 +1,33 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top Navbar */
+    .navbar {
+      background-color: #ff6174;
+      color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+
+    /* Project name styling */
+    .project-name {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Dashboard body */
+    .dashboard {
+      padding: 40px;
+      background-color: #f1f5f9;
+      min-height: calc(100vh - 70px);
+    }
+

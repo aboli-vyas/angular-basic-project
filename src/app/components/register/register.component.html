@@ -1,0 +1,28 @@
+<body>
+  <form [formGroup]="employee" (ngSubmit)="register()">
+    <div class="container">
+        <img src="assets/images/img3.jpg" alt="Background" class="background-image">
+        <div class="register-box">
+            <h2>Employee Registration</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" formControlName="name" required>
+                <span *ngIf="employee.get('name')?.invalid && employee.get('name')?.touched">Invalid Name</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" formControlName="email" required>
+                <span *ngIf="employee.get('email')?.invalid && employee.get('email')?.touched">Invalid Email</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" formControlName="password" required>
+                <span *ngIf="employee.get('password')?.invalid && employee.get('password')?.touched">Invalid Password</span>
+            </div>
+            <button class="register-btn">Sign Up</button>
+            <a routerLink="/login">Already Registerd? Sign In</a>
+        </div>
+    </div>
+  </form>
+</body>
+<app-footer></app-footer>
